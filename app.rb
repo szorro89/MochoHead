@@ -5,7 +5,8 @@ require './lib/ahorcado.rb'
 
 get '/' do
 	generador = GeneradorPalabra.new
-	session['palabra']= generador.obtenerPalabra
+	session['palabras']= generador.obtenerPalabra
+	session['vidas']= generador.obtenerVidas
 	erb :ahorcado
 end
 

@@ -11,3 +11,7 @@ Scenario: dar bienvenida
 Scenario: cargar partida
 	Given que cargue pantalla inicio
 	Then cargar asteriscos de palabra aleatoria en pantalla
+
+Scenario: mostrar intentos
+	Given que cargue pantalla inicio
+	Then mostrar cantidad de intentos que le quedan al jugador
