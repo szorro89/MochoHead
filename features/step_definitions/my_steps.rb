@@ -22,10 +22,16 @@ Entonces(/^debo poder buscar la letra en la palabra$/) do
   click_button("Probar")
 end
 
+Entonces(/^pintar o mostrar la letra en la palabra$/) do
+  pending # Write code here that turns the phrase above into concrete actions
+end
+
 Then(/^mostrar cantidad de intentos que le quedan al jugador$/) do
   expect(page.body).to match "Vidas: 6"
 end
 
-Entonces(/^para la palabra "([^"]*)" se debe pintar o mostrar la letra "([^"]*)" en la palabra$/) do |palabra, letra|
-  expect(page.body).to match "-a-----a"
+Then(/^restar una vida al jugador$/) do |letra|
+  fill_in(campoIntento, :with => letra)
+  click_button("Probar")
+  expect(page.body).to match "Vidas: 5"
 end
