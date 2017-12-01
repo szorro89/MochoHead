@@ -7,7 +7,7 @@
 <form method="post" action="/ingresarLetra">
 		<h1>Bienvenido a MochoHead</h1>
 		<h2>Espacios de la palabra a adivinar:<%= session['palabra'] %></h2>	
-		<input type="text" name="letraProbar" value="letraProbar" />
+		<input type="text" name="letraProbar" maxlength="1" />
 		<input type="submit" value="Probar" />
 	</form>
 </body>
