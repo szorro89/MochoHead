@@ -11,9 +11,8 @@ get '/' do
 end
 
 post '/ingresarLetra' do
-	#bucar la palabra
 
-
-
+	ahorcado = Ahorcado.new session['palabras'][1]
+	session['palabras'][0]=ahorcado.validarLetra ["a"]
 	erb :ahorcado
 end

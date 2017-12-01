@@ -3,17 +3,17 @@ class Ahorcado
 		@palabra = palabra
 	end
      
-   def validarLetra letra
+   def validarLetra letras
     palabra=@palabra
-	
-	for i in(0..palabra.size-1)
-	    if(palabra[i] == letra)
-	    	palabra[i]=letra
-	    else
-		palabra[i]="_"
-	    end
-	    i+=i
-	end
+
+	#letras.each do |letra|
+		for i in(0..palabra.size-1)
+	    	if(!letras.include? palabra[i])
+				palabra[i]="-"
+	    	end
+	    	i+=i
+		end
+	#end
 	return palabra
    	
    end
