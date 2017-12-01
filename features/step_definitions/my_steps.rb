@@ -22,7 +22,6 @@ Entonces(/^debo poder buscar la letra en la palabra$/) do
   click_button("Probar")
 end
 
-Entonces(/^ver si la letra esta en la palabra$/) do
+Entonces(/^pintar o mostrar la letra en la palabra$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
-

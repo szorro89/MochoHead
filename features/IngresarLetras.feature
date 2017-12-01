@@ -8,4 +8,4 @@ Escenario: el juego debe tener un campo para ingresar la letra
 	Dado que inicie un juego
 	Entonces debo ingresar "a" como "letraProbar"
 	Y debo poder buscar la letra en la palabra
-	Y ver si la letra esta en la palabra
+	Y pintar o mostrar la letra en la palabra
