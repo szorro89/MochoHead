@@ -7,7 +7,7 @@ Then(/^debo ver "([^"]*)"$/) do |text|
 end
 
 Then(/^cargar asteriscos de palabra aleatoria en pantalla$/) do
-  expect(page.body).to match "Espacios de la palabra a adivinar:xxxxx"
+  expect(page.body).to match "Espacios de la palabra a adivinar:********"
 end
 
 Dado(/^que inicie un juego$/) do

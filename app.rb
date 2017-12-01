@@ -5,8 +5,7 @@ require './lib/generadorPalabra'
 
 get '/' do
 	generador = GeneradorPalabra.new
-	#session['palabra']= generador.obtenerPalabra
-	session['palabra']= "xxxxx"
+	session['palabra']= generador.obtenerPalabra
 	erb :ahorcado
 end
 
