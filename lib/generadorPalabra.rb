@@ -1,20 +1,23 @@
 
 class GeneradorPalabra
-  def initialize
+
+	attr_accessor :vidas
+
+  	def initialize
 		@palabras = ["mariposa","caballo","vaca","perro"]
 		@vidas = 6	
 	end
      
-   def obtenerPalabra
+   	def obtenerPalabra
 	   	asteriscos="--------------------------------------------------------"
 	   	[asteriscos[1,@palabras[0].size], @palabras[0]]
-   end
+   	end
 
-   def obtenerVidas
+   	def obtenerVidas
    		@vidas
-   end
+   	end
 
-   def restarVida vidas
-   		vidas - 1
-   end
+   	def restarVida
+   		@vidas - 1
+   	end
 end
