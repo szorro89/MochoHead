@@ -6,6 +6,6 @@ class GeneradorPalabra
      
    def obtenerPalabra
 	   	asteriscos="********************************************************"
-	   	asteriscos[1,@palabras[1].size+1]  
+	   	[asteriscos[1,@palabras[0].size], @palabras[0]]
    end
 end
