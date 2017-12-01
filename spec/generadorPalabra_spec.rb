@@ -5,4 +5,9 @@ describe GeneradorPalabra do
 		generador = GeneradorPalabra.new
 		expect(generador.obtenerPalabra).to eq ["--------","mariposa"]
 	end
+
+	it "Si falla el intento, se pierde una vida" do
+		generador = GeneradorPalabra.new
+		expect(generador.restarVida 6).to eq 5
+	end
 end

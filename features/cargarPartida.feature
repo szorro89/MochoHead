@@ -15,3 +15,8 @@ Scenario: cargar partida
 Scenario: mostrar intentos
 	Given que cargue pantalla inicio
 	Then mostrar cantidad de intentos que le quedan al jugador
+
+Scenario: restar vida
+	Given que cargue pantalla inicio
+	And que falle en el intento de la letra
+	Then restar una vida al jugador

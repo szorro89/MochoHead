@@ -13,4 +13,8 @@ class GeneradorPalabra
    def obtenerVidas
    		@vidas
    end
+
+   def restarVida vidas
+   		vidas - 1
+   end
 end
