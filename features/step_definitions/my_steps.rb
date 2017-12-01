@@ -29,3 +29,9 @@ end
 Then(/^mostrar cantidad de intentos que le quedan al jugador$/) do
   expect(page.body).to match "Vidas: 6"
 end
+
+Then(/^restar una vida al jugador$/) do |letra|
+  fill_in(campoIntento, :with => letra)
+  click_button("Probar")
+  expect(page.body).to match "Vidas: 5"
+end

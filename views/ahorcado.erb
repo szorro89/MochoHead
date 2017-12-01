@@ -4,17 +4,23 @@
 	<title>MochoHead</title>
 </head>
 <body>
-	<form method="post" action="/ingresarLetra">
-		<div class="container">
-			<h1>Bienvenido a MochoHead</h1>
-			<h2>Espacios de la palabra a adivinar:<br/><%= session['palabras'][0] %>
-			</h2>	
-			<input type="text" name="letraProbar" maxlength="1" />
-			<input type="submit" value="Probar" />
+	<div class="container">
+		<form method="post" action="/ingresarLetra">
+			<div>
+				<h1>Bienvenido a MochoHead</h1>
+			</div>
+			<div>
+				<h2>Espacios de la palabra a adivinar:<br/><%= session['palabras'][0] %>
+				</h2>
+			</div>
+			<div>
+				<input type="text" name="letraProbar" maxlength="1" />
+				<input type="submit" value="Probar" />
+			</div>	
 			<div>
 				<label>Vidas: <%= session['vidas'] %></label>
 			</div>
-		</div>
-	</form>
+		</form>
+	</div>
 </body>
 </html>

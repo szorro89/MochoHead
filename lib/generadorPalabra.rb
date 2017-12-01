@@ -17,7 +17,11 @@ class GeneradorPalabra
    		@vidas
    	end
 
+   	def validarLetra letra
+   		
+   	end
+
    	def restarVida
-   		@vidas - 1
+   		@vidas -= 1
    	end
 end
