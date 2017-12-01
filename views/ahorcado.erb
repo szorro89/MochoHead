@@ -9,7 +9,7 @@
 			<h1>Bienvenido a MochoHead</h1>
 			<h2>Espacios de la palabra a adivinar:<br/><%= session['palabras'][0] %>
 			</h2>	
-			<input type="text" name="letraProbar" value="letraProbar" />
+			<input type="text" name="letraProbar" maxlength="1" />
 			<input type="submit" value="Probar" />
 			<div>
 				<label>Vidas: <%= session['vidas'] %></label>
