@@ -8,3 +8,8 @@ get '/' do
 	session['palabra']= generador.obtenerPalabra
 	erb :ahorcado
 end
+
+post '/ingresarLetra' do
+	#bucar la palabra
+	erb :ahorcado
+end
