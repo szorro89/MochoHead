@@ -25,3 +25,7 @@ end
 Entonces(/^pintar o mostrar la letra en la palabra$/) do
   pending # Write code here that turns the phrase above into concrete actions
 end
+
+Then(/^mostrar cantidad de intentos que le quedan al jugador$/) do
+  expect(page.body).to match "Vidas: 6"
+end
